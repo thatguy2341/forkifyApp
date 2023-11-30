@@ -1,0 +1,54 @@
+.hide-element {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-nav-toggler {
+  margin-right: 2rem;
+}
+
+.container {
+  min-height: 130rem;
+  overflow: visible;
+}
+
+.container-expanded-nav {
+  width: 100vw;
+  max-width: 100rem;
+  height: 10rem;
+  margin-top: 20rem;
+  z-index: 100;
+  background-color: antiquewhite;
+  position: absolute;
+  animation-name: slidein;
+  animation-duration: 0.5s;
+}
+.nav__list--expanded {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10rem;
+  padding: 2rem 10rem;
+}
+
+.nav__item--expanded {
+  height: 5rem;
+}
+
+.search {
+  justify-content: space-between;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 10rem;
+    height: 0;
+  }
+
+  to {
+    margin-top: 20rem;
+    height: 10rem;
+  }
+}
